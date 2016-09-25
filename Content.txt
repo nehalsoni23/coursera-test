@@ -1,0 +1,10 @@
+Going into the directory where we want to store our created files type following command in cmd :
+atom .
+This will automatically create directory structure in atom and by right clicking on it, select New File which will create new file for us in that folder
+only.
+After creating file to show it on browser with BrowserSynce type below command :
+browser-sync start --server --directory --files "**/*"
+--server means server mode which means I want to serve up all the files in a particular directory and --directory means if there is nothing in
+that directory and it can't find index.html, it will still display a webpage with basically a directory structure that it sees.
+--files means we want to tell browser-sync which files to watch for changes if any of those files changes. By "**/*", we say that we want any
+directory and whatever directory you'll find. we want any file inside of the directory, thats '*'.
