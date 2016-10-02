@@ -8,3 +8,10 @@ browser-sync start --server --directory --files "**/*"
 that directory and it can't find index.html, it will still display a webpage with basically a directory structure that it sees.
 --files means we want to tell browser-sync which files to watch for changes if any of those files changes. By "**/*", we say that we want any
 directory and whatever directory you'll find. we want any file inside of the directory, thats '*'.
+git status -> will show uncommitted files as red. For adding files -> git add . (. means anything in this directory and any subdirectory)
+After that git status will show files with green colors
+
+To commit the files in git
+git commit -m "First web files" -> -m is flag to specify a message with our commit and that's required.
+Before committing into github first we have to provide credentials with given commands.
+After committing we have to write "git push" to make available remotely I guess.
